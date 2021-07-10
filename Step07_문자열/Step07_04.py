@@ -1,4 +1,4 @@
-t = int(input())
+test = int(input())
 for i in range(1, t+1):
     repeat, s = input().split()
     for x in s:
