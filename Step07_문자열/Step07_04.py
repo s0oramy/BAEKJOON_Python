@@ -5,4 +5,3 @@ for i in range(1, t+1):
         result = x * int(repeat)
         print(result, end = '')
     print()
-    
