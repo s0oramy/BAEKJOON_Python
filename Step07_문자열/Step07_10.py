@@ -1,7 +1,7 @@
-N = int(input())
+n = int(input())
 answer = 0 
 
-for i in range(N):
+for i in range(n):
     word = input()
     for j in range(len(word)): 
         if j != len(word)-1 :
