@@ -1,15 +1,9 @@
 n = int(input())
-answer = 0 
-
+count = n
 for i in range(n):
     word = input()
-    for j in range(len(word)): 
-        if j != len(word)-1 :
-            if word[j] == word[j+1]:
-                continue
-            elif word[j] in word[j+1:]:
-                break
-        else :
-            answer += 1
-print(answer)
-
+    for w in range(len(word)-1):
+        if word.find(word[w]) > word.find(word[w+1]):
+            count = count - 1
+            break
+print(count)
