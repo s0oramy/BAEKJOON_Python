@@ -1,14 +1,15 @@
 m = int(input())
 n = int(input())
 list = []
-for _ in range(m, n+1):
+for a in range(m, n+1):
     count = 0
-    if _ > 1:
-        for i in range(2, _):
-            if _ % i != 0:
+    if a > 1:
+        for i in range(2, a):
+            if a % i == 0:
                 count += 1
-            if count == _ - 2:
-                list.append(_)
+                break
+        else:
+            list.append(a)
                 
 if sum(list) == 0:
     print (-1)
