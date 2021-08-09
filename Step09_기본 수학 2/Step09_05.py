@@ -21,10 +21,8 @@ for a in all_list : # 주어진 범위 안의 소수들을 찾아서 저장해�
 while (1):
     n = int(input())
     count = 0
-
     if n == 0:
         break
-
     for s in save_list:
         if n < s <= n * 2:
             count += 1
